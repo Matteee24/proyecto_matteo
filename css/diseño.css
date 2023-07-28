@@ -1,0 +1,293 @@
+/* Estilos generales para todas las pantallas */
+body {
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Overpass', sans-serif;
+    overflow-y: scroll;
+    padding-left: 9px;
+    background-color: rgb(0, 0, 0);
+}
+
+h1, h2, h3 {
+    color: white;
+    font-style: italic;
+}
+
+p {
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos para el Navbar */
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color:#26ade4;
+}
+.navbar {
+    background: #26ade4;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: #26ade4;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #120e0e;
+}
+
+/* Estilos para el Hero Section */
+.info {
+    padding: 50px 0;
+}
+
+
+.info h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la sección de contenido */
+.content {
+    padding: 50px 0;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de contacto */
+/* Estilos generales para todas las pantallas */
+body {
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Overpass', sans-serif;
+    overflow-y: scroll;
+    padding-left: 9px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  h1, h2, h3 {
+    color: white;
+    font-style: italic;
+  }
+  
+  p {
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .form-container {
+    background-color: #26ade4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(232, 223, 223, 0.851);
+    margin: 50px auto;
+    max-width: 600px;
+  }
+  
+  .form-group label {
+    font-size: 18px;
+    color: rgb(54, 52, 52);
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #065878;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1a8bb8;
+  }
+  
+  /* Estilos para versiones de escritorio */
+  @media (min-width: 769px) {
+    .form-container {
+      margin: 100px auto;
+    }
+  
+    .form-control {
+      width: 300px;
+    }
+  
+    .btn-primary {
+      width: 150px;
+    }
+  }
+  
+  /* Estilos para versiones móviles */
+  @media (max-width: 768px) {
+    .form-control {
+      width: 100%;
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  }
+  
+
+/* Estilos para el Footer */
+.footer {
+    background-color: #26ade4;
+    padding: 20px 0;
+    position: relative;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Estilos para versiones de escritorio */
+@media (min-width: 769px) {
+    /* Estilos para el Navbar de escritorio */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    /* Estilos para el Hero Section de escritorio */
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    /* Estilos para la sección de contenido de escritorio */
+    .content {
+        padding: 100px 0;
+    }
+
+    .content h2 {
+        font-size: 36px;
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    overflow-x: none;
+    
+  }
+  
+  .slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slide-animation 15s infinite;
+  }
+  
+  .slide {
+    width: 20%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  input[name="slider"] {
+    display: none;
+  }
+  
+  .slider-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .slider-navigation label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  input[name="slider"]:checked ~ .slider-navigation label {
+    background-color: #555;
+  }
+  
+  @keyframes slide-animation {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-20%);
+    }
+    45% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(-40%);
+    }
+    70% {
+      transform: translateX(-40%);
+    }
+    75% {
+      transform: translateX(-60%);
+    }
+    95% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
